@@ -1,334 +1,335 @@
 :root {
-  --oliva-fondo: #4A5D4E;
-  --oliva-oscuro: #2C392F;
-  --oliva-suave: #687E6D;
-  --blanco-hueso: #FAF9F6;
-  --blanco-puro: #FFFFFF;
-  --texto-oscuro: #222522;
-  --texto-secundario: #5A625B;
+    --oliva-fondo: #4A5D4E;
+    --oliva-oscuro: #2C392F;
+    --oliva-suave: #687E6D;
+    --blanco-hueso: #FAF9F6;
+    --blanco-puro: #FFFFFF;
+    --texto-oscuro: #222522;
+    --texto-secundario: #5A625B;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* --- ESTILOS BASE (MÓVIL PRIMERO) --- */
 body {
-  background-color: var(--oliva-fondo);
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: var(--texto-oscuro);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding: 20px 14px;
+    background-color: var(--oliva-fondo);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--texto-oscuro);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px 14px;
 }
 
 .container,
 .leccion-container {
-  width: 100%;
-  max-width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 }
 
 /* Encabezado Index (Móvil) */
 .header-principal {
-  text-align: center;
-  color: var(--blanco-hueso);
-  margin-bottom: 24px;
+    text-align: center;
+    color: var(--blanco-hueso);
+    margin-bottom: 24px;
 }
 
 .header-principal h1 {
-  font-family: 'Lora', serif;
-  font-size: 1.9rem;
-  margin-bottom: 6px;
+    font-family: 'Lora', serif;
+    font-size: 1.9rem;
+    margin-bottom: 6px;
 }
 
 .header-principal p {
-  font-size: 0.95rem;
-  opacity: 0.9;
+    font-size: 0.95rem;
+    opacity: 0.9;
 }
 
 /* Grilla de 12 casilleros (Móvil: 2 columnas) */
 .grid-lecciones {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
 
 .card-leccion {
-  background-color: var(--blanco-hueso);
-  border-radius: 12px;
-  padding: 20px 12px;
-  text-decoration: none;
-  color: var(--texto-oscuro);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-  border: 2px solid transparent;
+    background-color: var(--blanco-hueso);
+    border-radius: 12px;
+    padding: 20px 12px;
+    text-decoration: none;
+    color: var(--texto-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
 }
 
 .card-leccion:active {
-  transform: scale(0.97);
+    transform: scale(0.97);
 }
 
 .card-leccion .numero {
-  font-family: 'Lora', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--oliva-fondo);
-  line-height: 1;
-  margin-bottom: 8px;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--oliva-fondo);
+    line-height: 1;
+    margin-bottom: 8px;
 }
 
 .card-leccion h2 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
 }
 
 .card-leccion .subtitulo {
-  font-size: 0.78rem;
-  color: var(--texto-secundario);
-  line-height: 1.3;
+    font-size: 0.78rem;
+    color: var(--texto-secundario);
+    line-height: 1.3;
 }
 
 /* --- PÁGINAS DE LECCIÓN (MÓVIL) --- */
 .top-nav {
-  position: sticky;
-  top: 10px;
-  z-index: 100;
-  background-color: var(--oliva-oscuro);
-  padding: 12px 14px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+    background-color: var(--oliva-oscuro);
+    padding: 12px 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--blanco-hueso);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blanco-hueso);
 }
 
 .btn-volver {
-  color: var(--blanco-hueso);
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.14);
-  padding: 6px 12px;
-  border-radius: 8px;
+    color: var(--blanco-hueso);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.14);
+    padding: 6px 12px;
+    border-radius: 8px;
 }
 
 .nav-titulo {
-  font-family: 'Lora', serif;
-  font-size: 1rem;
-  font-weight: 700;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 /* Barra de subtemas deslizable horizontalmente en móvil */
 .subtemas-bar {
-  display: flex;
-  overflow-x: auto;
-  gap: 8px;
-  padding-bottom: 4px;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Oculta barra de scroll en Firefox */
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Oculta barra de scroll en Firefox */
 }
 
 .subtemas-bar::-webkit-scrollbar {
-  display: none; /* Oculta barra de scroll en Chrome/Safari */
+    display: none;
+    /* Oculta barra de scroll en Chrome/Safari */
 }
 
 .btn-subtema {
-  flex: 0 0 auto; /* Evita que los botones se aplasten */
-  background-color: var(--blanco-hueso);
-  color: var(--oliva-oscuro);
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 6px 12px;
-  border-radius: 20px;
+    flex: 0 0 auto;
+    /* Evita que los botones se aplasten */
+    background-color: var(--blanco-hueso);
+    color: var(--oliva-oscuro);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
 }
 
 /* Tarjetas de contenido (Móvil) */
 .bloque-tema {
-  background-color: var(--blanco-hueso);
-  border-radius: 12px;
-  padding: 20px 18px;
-  margin-bottom: 18px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  scroll-margin-top: 115px;
+    background-color: var(--blanco-hueso);
+    border-radius: 12px;
+    padding: 20px 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    scroll-margin-top: 115px;
 }
 
 .bloque-tema h2 {
-  font-family: 'Lora', serif;
-  color: var(--oliva-oscuro);
-  font-size: 1.25rem;
-  margin-bottom: 14px;
-  padding-bottom: 6px;
-  border-bottom: 2px solid #E2E7E3;
+    font-family: 'Lora', serif;
+    color: var(--oliva-oscuro);
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #E2E7E3;
 }
 
 .bloque-tema p {
-  margin-bottom: 12px;
-  line-height: 1.55;
-  font-size: 0.95rem;
+    margin-bottom: 12px;
+    line-height: 1.55;
+    font-size: 0.95rem;
 }
 
 .pregunta {
-  font-weight: 700;
-  color: var(--oliva-oscuro);
-  margin-top: 14px;
+    font-weight: 700;
+    color: var(--oliva-oscuro);
+    margin-top: 14px;
 }
 
 /* Enlace oculto para citas bíblicas */
 .cita {
-  font-weight: 700;
-  color: var(--texto-oscuro);
-  text-decoration: none;
-  border-bottom: 1px dotted transparent;
+    font-weight: 700;
+    color: var(--texto-oscuro);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
 }
 
 /* Recuadros de ilustraciones */
 .ilustracion-box {
-  background-color: var(--blanco-puro);
-  border-left: 4px solid var(--oliva-fondo);
-  padding: 14px 16px;
-  margin: 16px 0;
-  border-radius: 0 8px 8px 0;
-  font-size: 0.9rem;
+    background-color: var(--blanco-puro);
+    border-left: 4px solid var(--oliva-fondo);
+    padding: 14px 16px;
+    margin: 16px 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
 }
 
-.esquema-cielos {
-  font-family: monospace;
-  background-color: #F0F3F1;
-  padding: 12px;
+.img-esquema {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 12px auto 4px auto;
   border-radius: 8px;
-  margin-top: 8px;
-  font-size: 0.8rem;
-  line-height: 1.7;
-  overflow-x: auto;
-  white-space: pre;
 }
+
 
 /* --- TABLET Y COMPUTADORA (MIN-WIDTH: 768PX) --- */
 @media (min-width: 768px) {
-  body {
-    padding: 40px 24px;
-  }
+    body {
+        padding: 40px 24px;
+    }
 
-  .leccion-container {
-    max-width: 850px;
-  }
+    .leccion-container {
+        max-width: 850px;
+    }
 
-  .header-principal {
-    margin-bottom: 40px;
-  }
+    .header-principal {
+        margin-bottom: 40px;
+    }
 
-  .header-principal h1 {
-    font-size: 2.5rem;
-  }
+    .header-principal h1 {
+        font-size: 2.5rem;
+    }
 
-  .header-principal p {
-    font-size: 1.05rem;
-  }
+    .header-principal p {
+        font-size: 1.05rem;
+    }
 
-  .grid-lecciones {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
+    .grid-lecciones {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
 
-  .card-leccion {
-    padding: 28px 20px;
-    border-radius: 14px;
-  }
+    .card-leccion {
+        padding: 28px 20px;
+        border-radius: 14px;
+    }
 
-  .card-leccion:hover {
-    transform: translateY(-5px);
-    background-color: var(--blanco-puro);
-    border-color: var(--oliva-suave);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
-  }
+    .card-leccion:hover {
+        transform: translateY(-5px);
+        background-color: var(--blanco-puro);
+        border-color: var(--oliva-suave);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    }
 
-  .card-leccion .numero {
-    font-size: 2.6rem;
-    margin-bottom: 12px;
-  }
+    .card-leccion .numero {
+        font-size: 2.6rem;
+        margin-bottom: 12px;
+    }
 
-  .card-leccion h2 {
-    font-size: 1.15rem;
-  }
+    .card-leccion h2 {
+        font-size: 1.15rem;
+    }
 
-  .card-leccion .subtitulo {
-    font-size: 0.85rem;
-  }
+    .card-leccion .subtitulo {
+        font-size: 0.85rem;
+    }
 
-  .top-nav {
-    top: 15px;
-    padding: 16px 20px;
-    border-radius: 14px;
-    margin-bottom: 25px;
-  }
+    .top-nav {
+        top: 15px;
+        padding: 16px 20px;
+        border-radius: 14px;
+        margin-bottom: 25px;
+    }
 
-  .subtemas-bar {
-    flex-wrap: wrap;
-    overflow-x: visible;
-    padding-bottom: 0;
-  }
+    .subtemas-bar {
+        flex-wrap: wrap;
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
 
-  .btn-subtema {
-    font-size: 0.85rem;
-    transition: all 0.2s ease;
-  }
+    .btn-subtema {
+        font-size: 0.85rem;
+        transition: all 0.2s ease;
+    }
 
-  .btn-subtema:hover {
-    background-color: var(--oliva-suave);
-    color: var(--blanco-puro);
-  }
+    .btn-subtema:hover {
+        background-color: var(--oliva-suave);
+        color: var(--blanco-puro);
+    }
 
-  .btn-volver {
-    transition: background 0.2s;
-  }
+    .btn-volver {
+        transition: background 0.2s;
+    }
 
-  .btn-volver:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-  }
+    .btn-volver:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
 
-  .bloque-tema {
-    padding: 30px;
-    border-radius: 14px;
-    margin-bottom: 24px;
-    scroll-margin-top: 135px;
-  }
+    .bloque-tema {
+        padding: 30px;
+        border-radius: 14px;
+        margin-bottom: 24px;
+        scroll-margin-top: 135px;
+    }
 
-  .bloque-tema h2 {
-    font-size: 1.5rem;
-  }
+    .bloque-tema h2 {
+        font-size: 1.5rem;
+    }
 
-  .bloque-tema p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
+    .bloque-tema p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 
-  .cita:hover {
-    color: var(--oliva-fondo);
-    border-bottom: 1px dotted var(--oliva-fondo);
-  }
+    .cita:hover {
+        color: var(--oliva-fondo);
+        border-bottom: 1px dotted var(--oliva-fondo);
+    }
 
-  .esquema-cielos {
-    font-size: 0.9rem;
-  }
+    .esquema-cielos {
+        font-size: 0.9rem;
+    }
 }
