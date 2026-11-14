@@ -333,3 +333,36 @@ body {
         font-size: 0.9rem;
     }
 }
+/* Comparativa de ejércitos en Lección 2 */
+.comparativa-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.columna-lista {
+  background-color: var(--blanco-puro);
+  border: 1px solid #E2E7E3;
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.columna-lista h3 {
+  font-family: 'Lora', serif;
+  color: var(--oliva-oscuro);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.columna-lista ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .comparativa-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
