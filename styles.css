@@ -448,3 +448,39 @@ a.cita:hover {
     break-inside: avoid;
   }
 }
+.profe-item {
+  background-color: var(--bg-manteca-soft);
+  border: 1px solid var(--line-manteca);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+.profe-item:last-child {
+  margin-bottom: 0;
+}
+
+.profe-consigna {
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: var(--ink-dark);
+}
+
+.profe-clave {
+  margin: 0;
+  padding: 10px 14px;
+  background-color: var(--bg-tint-mint);
+  border-left: 4px solid var(--mint-dark);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--ink-dark);
+  font-size: 0.96em;
+}
+
+.profe-clave strong {
+  font-family: var(--font-ui);
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--mint-dark);
+  margin-right: 4px;
+}
